@@ -1,0 +1,5 @@
+.overview-main {
+    height: calc(100vh - 150px);
+    background-color: grey;
+    width: 100vw;
+}
