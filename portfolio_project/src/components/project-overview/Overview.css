@@ -2,4 +2,14 @@
     height: calc(100vh - 150px);
     background-color: grey;
     width: 100vw;
+    display: flex;
+    overflow: scroll;
+}
+
+.overview-item-main {
+    padding: 10px;
+}
+
+.overview-outer-grid {
+    background-color: white;
 }

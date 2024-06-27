@@ -7,14 +7,14 @@ import Overview from "../project-overview/Overview.tsx"
 function App() {
 
   return (
-    <div>
+    <>
       <CssBaseline/>
       <NavBar/>
       <Box>
         <Overview/>
       </Box>
       <Footer/>
-    </div>
+    </>
   )
 }
 
