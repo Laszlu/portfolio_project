@@ -6,7 +6,7 @@ import NavBarHome from "./NavBarHome.tsx"
 function NavBar() {
   return (
     <Box className={"navbar-main"}>
-      <NavBarHome tabText={"Leonard Ferreyra"}/>
+      <NavBarHome tabText={"leonardvictorluis"}/>
       <NavBarTab tabText={"About"}/>
       <NavBarTab tabText={"Contact"}/>
       <NavBarTab tabText={"Imprint"}/>

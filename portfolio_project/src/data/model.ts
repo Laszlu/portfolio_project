@@ -7,7 +7,7 @@ export enum MusicType {
   None,
   EP,
   Album,
-  Song
+  Single
 }
 
 export enum CommissionType {

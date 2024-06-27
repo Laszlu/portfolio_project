@@ -26,7 +26,7 @@ function OverviewItem(props: OverviewItemProps) {
         />
         <CardMedia
           component="img"
-          height="150"
+          width="100"
           image={props.project.cover.source}
           alt={props.project.cover.altText}
         />

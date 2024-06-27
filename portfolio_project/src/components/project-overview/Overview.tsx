@@ -11,7 +11,7 @@ const Zimmer301 = new Project(
   "https://www.youtube.com/watch?v=bslav-vCMGU",
   CommissionType.Personal,
   new Cover("https://raw.githubusercontent.com/Laszlu/portfolio_project/master/portfolio_project/src/assets/images/Henry_Rey_EP_Cover.jpg", "Henry Rey EP Cover", "jpg"),
-  MusicType.Song
+  MusicType.Single
 )
 
 let testSongs : Project[] = []
