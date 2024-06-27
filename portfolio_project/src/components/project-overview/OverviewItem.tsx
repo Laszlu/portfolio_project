@@ -5,11 +5,12 @@ import { Project, ProjectType } from "../../data/model.ts"
 function SetAvatarIcon(projectType: ProjectType) {
   switch (projectType) {
     case ProjectType.Music:
-      return "U+1F39C";
+      return String.fromCodePoint(127925);
     case ProjectType.Design:
       return "&#128443;"
   }
 }
+// String.fromCodePoint(127900)
 
 function OverviewItem(props: OverviewItemProps) {
   return(
@@ -26,7 +27,7 @@ function OverviewItem(props: OverviewItemProps) {
         <CardMedia
           component="img"
           height="150"
-          image={require(props.project.cover.source).default}
+          image={props.project.cover.source}
           alt={props.project.cover.altText}
         />
         <CardContent>
