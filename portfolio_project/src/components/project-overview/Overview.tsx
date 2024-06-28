@@ -1,7 +1,10 @@
 import "./Overview.css"
+import { Unstable_Popup as BasePopup } from '@mui/base/Unstable_Popup';
 import { Box, Grid } from "@mui/material"
 import { CommissionType, Cover, MusicType, Project, ProjectType } from "../../data/model.ts"
 import OverviewItem from "./OverviewItem.tsx"
+import OverviewPopup from "./OverviewPopup.tsx"
+import React from "react"
 
 const Zimmer301 = new Project(
   ProjectType.Music,
@@ -14,7 +17,7 @@ const Zimmer301 = new Project(
   MusicType.Single
 )
 
-let testSongs : Project[] = []
+const testSongs : Project[] = []
 
 for (let i = 0; i < 10; i++) {
   testSongs.push(Zimmer301)
@@ -23,17 +26,34 @@ for (let i = 0; i < 10; i++) {
 
 
 function Overview() {
-  console.log(testSongs)
+  const [projectForPopup, setProjectForPopup] = React.useState(Zimmer301)
+  const [anchor, setAnchor] = React.useState<null | HTMLElement>(null);
+
+  const open = Boolean(anchor);
+  const id = open ? 'simple-popup' : undefined;
+
   return(
-    <Box className={"overview-main"}>
-      <Grid className={"overview-outer-grid"} container spacing={{xs: 2, md: 0}} columns={{xs: 4, sm: 8, md: 12}}>
-        {Array.from(testSongs).map((p, index) => (
-          <Grid xs={2} sm={3} md={4} key={index}>
-            <OverviewItem project={p}/>
-          </Grid>
-        ))}
-      </Grid>
-    </Box>
+    <>
+      <Box className={"overview-main"}>
+        <Grid className={"overview-outer-grid"} container spacing={{xs: 2, md: 8}} columns={{xs: 4, sm: 8, md: 12}}>
+          {Array.from(testSongs).map((p, index) => (
+            <Grid item={true} xs={2} sm={4} md={4} key={index}>
+              <OverviewItem
+                anchor={anchor}
+                setAnchor={setAnchor}
+                project={p}
+                projectForPopup={projectForPopup}
+                setProjectForPopup={setProjectForPopup}/>
+            </Grid>
+          ))}
+        </Grid>
+
+      </Box>
+      <BasePopup id={id} open={open} anchor={anchor}>
+        <OverviewPopup project={projectForPopup}/>
+      </BasePopup>
+    </>
+
   )
 }
 

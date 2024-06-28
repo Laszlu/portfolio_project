@@ -9,7 +9,6 @@ function NavBar() {
       <NavBarHome tabText={"leonardvictorluis"}/>
       <NavBarTab tabText={"About"}/>
       <NavBarTab tabText={"Contact"}/>
-      <NavBarTab tabText={"Imprint"}/>
     </Box>
   )
 }
