@@ -2,7 +2,6 @@
     height: calc(100vh - 150px);
     background-color: grey;
     width: 100vw;
-    display: flex;
     overflow: scroll;
     padding: 20px 20px 0 20px;
 }
@@ -15,9 +14,25 @@
     background-color: transparent;
 }
 
+#popup-anchor {
+    height: 1px;
+    width: 100%;
+}
+
 .overview-popup-box {
-    width: max-content;
-    height: max-content;
-    background-color: black;
+    width: 60vw;
+    height: calc(100vh - 200px);
     color: white;
+    overflow: visible;
+}
+
+.overview-popup-card {
+    height: 100%;
+    width: 100%;
+    box-shadow: 1px 1px 5px -1px black !important;
+}
+
+.overview-popup-iframe {
+    margin-left: auto;
+    margin-right: auto;
 }

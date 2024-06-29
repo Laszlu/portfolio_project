@@ -11,7 +11,7 @@ const Zimmer301 = new Project(
   "Zimmer 301",
   "Track 4 in Henry Rey EP",
   "lny",
-  "https://www.youtube.com/watch?v=bslav-vCMGU",
+  "https://www.youtube.com/embed/bslav-vCMGU",
   CommissionType.Personal,
   new Cover("https://raw.githubusercontent.com/Laszlu/portfolio_project/master/portfolio_project/src/assets/images/Henry_Rey_EP_Cover.jpg", "Henry Rey EP Cover", "jpg"),
   MusicType.Single
@@ -35,6 +35,7 @@ function Overview() {
   return(
     <>
       <Box className={"overview-main"}>
+        <div id={"popup-anchor"}></div>
         <Grid className={"overview-outer-grid"} container spacing={{xs: 2, md: 8}} columns={{xs: 4, sm: 8, md: 12}}>
           {Array.from(testSongs).map((p, index) => (
             <Grid item={true} xs={2} sm={4} md={4} key={index}>
@@ -47,11 +48,15 @@ function Overview() {
             </Grid>
           ))}
         </Grid>
-
       </Box>
-      <BasePopup id={id} open={open} anchor={anchor}>
-        <OverviewPopup project={projectForPopup}/>
-      </BasePopup>
+
+        <BasePopup style={{ zIndex: "12000" }} id={id} open={open} anchor={anchor}>
+          <OverviewPopup
+            project={projectForPopup}
+            anchor={anchor}
+            setAnchor={setAnchor}
+          />
+        </BasePopup>
     </>
 
   )

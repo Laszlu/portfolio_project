@@ -15,4 +15,6 @@ export interface OverviewItemProps {
 
 export interface OverviewPopupProps {
   project: Project;
+  anchor: HTMLElement | null;
+  setAnchor: React.Dispatch<React.SetStateAction<HTMLElement | null>>
 }

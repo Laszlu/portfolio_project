@@ -1,7 +1,6 @@
 import { OverviewItemProps } from "../../data/Interfaces.ts"
-import { Card, CardHeader, Avatar, CardMedia, CardContent, Typography, Paper } from "@mui/material"
-import { Project, ProjectType } from "../../data/model.ts"
-import React from "react"
+import { Card, CardHeader, Avatar, CardMedia, CardContent, Typography } from "@mui/material"
+import { ProjectType } from "../../data/model.ts"
 
 function SetAvatarIcon(projectType: ProjectType) {
   switch (projectType) {
@@ -13,9 +12,10 @@ function SetAvatarIcon(projectType: ProjectType) {
 }
 
 function OverviewItem(props: OverviewItemProps) {
-  function handleClick(event: React.MouseEvent<HTMLElement>) {
+  function handleClick() {
     console.log("media clicked")
-    props.setAnchor(props.anchor ? null : event.currentTarget);
+    const navBar = document.querySelector("#popup-anchor")
+    props.setAnchor(props.anchor ? null : (navBar as HTMLElement));
     props.setProjectForPopup(props.project);
   }
 
