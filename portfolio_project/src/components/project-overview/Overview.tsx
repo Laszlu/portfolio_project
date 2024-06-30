@@ -1,7 +1,7 @@
 import "./Overview.css"
 import { Unstable_Popup as BasePopup } from '@mui/base/Unstable_Popup';
 import { Box, Grid } from "@mui/material"
-import { CommissionType, Cover, MusicType, Project, ProjectType } from "../../data/model.ts"
+import { CommissionType, Cover, MusicType, Project, ProjectCredit, ProjectType } from "../../data/model.ts"
 import OverviewItem from "./OverviewItem.tsx"
 import OverviewPopup from "./OverviewPopup.tsx"
 import React from "react"
@@ -10,7 +10,7 @@ const Zimmer301 = new Project(
   ProjectType.Music,
   "Zimmer 301",
   "Track 4 in Henry Rey EP",
-  "lny",
+  [new ProjectCredit("lny", "main artist")],
   "https://www.youtube.com/embed/bslav-vCMGU",
   CommissionType.Personal,
   new Cover("https://raw.githubusercontent.com/Laszlu/portfolio_project/master/portfolio_project/src/assets/images/Henry_Rey_EP_Cover.jpg", "Henry Rey EP Cover", "jpg"),
@@ -50,7 +50,7 @@ function Overview() {
         </Grid>
       </Box>
 
-        <BasePopup style={{ zIndex: "12000" }} id={id} open={open} anchor={anchor}>
+        <BasePopup style={{ zIndex: "12000" }} id={id} open={open} anchor={anchor} offset={5}>
           <OverviewPopup
             project={projectForPopup}
             anchor={anchor}

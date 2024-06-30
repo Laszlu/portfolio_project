@@ -1,3 +1,10 @@
+export enum BodyState {
+  Overview,
+  About,
+  Contact,
+  Imprint
+}
+
 export enum ProjectType {
   Music,
   Design
@@ -13,6 +20,16 @@ export enum MusicType {
 export enum CommissionType {
   Personal,
   Commissioned
+}
+
+export class ProjectCredit {
+  public artist: string;
+  public projectRole: string;
+
+  constructor(artist: string, projectRole: string) {
+    this.artist = artist;
+    this.projectRole = projectRole;
+  }
 }
 
 export class Cover {
@@ -31,17 +48,17 @@ export class Project {
   public projectType: ProjectType;
   public title: string;
   public description: string;
-  public artist: string;
+  public credits: ProjectCredit[];
   public source: string;
   public commissionType: CommissionType;
   public cover: Cover;
   public musicType: MusicType;
 
-  constructor(projectType: ProjectType, title: string, description: string, artist: string, source: string, commissionType: CommissionType, cover: Cover, musicType: MusicType) {
+  constructor(projectType: ProjectType, title: string, description: string, credits: ProjectCredit[], source: string, commissionType: CommissionType, cover: Cover, musicType: MusicType) {
     this.projectType = projectType;
     this.title = title;
     this.description = description;
-    this.artist = artist;
+    this.credits = credits;
     this.source = source;
     this.commissionType = commissionType;
     this.cover = cover;

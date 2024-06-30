@@ -2,7 +2,7 @@ import {NavBarTabProps} from "../../data/Interfaces.ts"
 
 function NavBarHome(props: NavBarTabProps) {
   return(
-    <div className={"navbar-home"}>
+    <div onClick={() => props.setAppBodyState(props.stateToSet)} className={"navbar-home"}>
       {props.tabText}
     </div>
   )

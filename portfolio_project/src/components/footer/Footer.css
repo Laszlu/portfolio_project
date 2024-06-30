@@ -24,4 +24,5 @@
 .footer-box-right a {
     color: inherit;
     text-decoration: underline;
+    cursor: pointer;
 }

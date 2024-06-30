@@ -33,6 +33,11 @@
 }
 
 .overview-popup-iframe {
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+}
+
+.overview-popup-header {
+    margin-top: 1% !important;
 }

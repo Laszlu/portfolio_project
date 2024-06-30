@@ -14,14 +14,14 @@ function OverviewPopup(props: OverviewPopupProps) {
             title={props.project.title}
           />
           <CardContent>
-            <iframe width="640" height="373" src={props.project.source} title="Zimmer 301"
+            <iframe className={"overview-popup-iframe"} src={props.project.source} title="Zimmer 301"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            <Typography variant={"h5"}>Description:</Typography>
+            <Typography className={"overview-popup-header"} variant={"h5"}>Description:</Typography>
             <Typography>{props.project.description}</Typography>
-            <Typography variant={"h5"}>Credits:</Typography>
-            <Typography>{props.project.artist}</Typography>
+            <Typography className={"overview-popup-header"} variant={"h5"}>Credits:</Typography>
+            <Typography>{props.project.credits[0].artist}: {props.project.credits[0].projectRole}</Typography>
           </CardContent>
         </Card>
       </ClickAwayListener>
