@@ -13,7 +13,7 @@ const Zimmer301 = new Project(
   [new ProjectCredit("lny", "main artist")],
   "https://www.youtube.com/embed/bslav-vCMGU",
   CommissionType.Personal,
-  new Cover("https://raw.githubusercontent.com/Laszlu/portfolio_project/master/portfolio_project/src/assets/images/Henry_Rey_EP_Cover.jpg", "Henry Rey EP Cover", "jpg"),
+  new Cover("https://raw.githubusercontent.com/Laszlu/portfolio_project/master/src/assets/images/Henry_Rey_EP_Cover.jpg", "Henry Rey EP Cover", "jpg"),
   MusicType.Single
 )
 

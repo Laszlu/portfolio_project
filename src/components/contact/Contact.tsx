@@ -46,24 +46,26 @@ function Contact() {
       <Typography variant={"h3"}>
         Contact
       </Typography>
-      <form id={"contact-form"} onSubmit={sendEmail}>
-        <div>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-        </div>
-        <div>
-          <label>Email</label>
-          <input type="text" name="user_email" />
-        </div>
-        <div>
-          <label>Message</label>
-          <textarea name="message" />
-        </div>
-        <div>
-          <input type="submit" value="Submit" disabled={isSubmitting} />
-          {<p>{stateMessage}</p>}
-        </div>
-      </form>
+      <Box>
+        <form id={"contact-form"} onSubmit={sendEmail}>
+          <div>
+            <label>Name</label>
+            <input type="text" name="user_name" />
+          </div>
+          <div>
+            <label>Email</label>
+            <input type="text" name="user_email" />
+          </div>
+          <div>
+            <label>Message</label>
+            <textarea name="message" />
+          </div>
+          <div>
+            <input type="submit" value="Submit" disabled={isSubmitting} />
+            {<p>{stateMessage}</p>}
+          </div>
+        </form>
+      </Box>
     </Box>
   )
 }
