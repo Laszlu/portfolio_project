@@ -9,6 +9,7 @@ import { Box, CssBaseline } from "@mui/material"
 import React from "react"
 import { BodyState } from "../../data/model.ts"
 
+//test
 
 function SwitchBodyState(state: BodyState) {
   switch (state) {
