@@ -1,6 +1,6 @@
 .overview-main {
     height: calc(100vh - 150px);
-    background-color: grey;
+    background-color: black;
     width: 100vw;
     overflow: scroll;
     padding: 20px 20px 0 20px;
@@ -8,6 +8,31 @@
 
 .overview-item-main {
     padding: 0;
+}
+
+.overview-item-card {
+    background-color: black !important;
+}
+
+.overview-item-img {
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.overview-item-content {
+    background-color: black;
+    text-align: left;
+    padding: 10px 0 0 0 !important;
+}
+
+.overview-item-content-text {
+    color: white;
+    line-height: 1.3em !important;
+}
+
+.overview-item-content div {
+    display: flex;
+    justify-content: space-between;
 }
 
 .overview-outer-grid {
@@ -30,6 +55,7 @@
     height: 100%;
     width: 100%;
     box-shadow: 1px 1px 5px -1px black !important;
+    overflow: scroll !important;
 }
 
 .overview-popup-iframe {

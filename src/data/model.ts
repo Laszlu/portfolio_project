@@ -22,6 +22,15 @@ export enum CommissionType {
   Commissioned
 }
 
+export enum ProjectRole {
+  Producing,
+  Mixing,
+  Mastering,
+  Visuals,
+  Recording,
+  Songwriting
+}
+
 export class ProjectCredit {
   public artist: string;
   public projectRole: string;
@@ -47,17 +56,20 @@ export class Cover {
 export class Project {
   public projectType: ProjectType;
   public title: string;
-  public description: string;
-  public credits: ProjectCredit[];
+  public description: string; // TODO: entfernen
+  public releaseYear: string;
+  public credits: ProjectCredit[]; // TODO: Artist direkt einbauen, Rollen als ProjectRoles
   public source: string;
-  public commissionType: CommissionType;
+  public commissionType: CommissionType; // TODO: kann weg
   public cover: Cover;
   public musicType: MusicType;
+  //TODO: Visuals als klasse anlegen
 
-  constructor(projectType: ProjectType, title: string, description: string, credits: ProjectCredit[], source: string, commissionType: CommissionType, cover: Cover, musicType: MusicType) {
+  constructor(projectType: ProjectType, title: string, description: string, releaseYear: string, credits: ProjectCredit[], source: string, commissionType: CommissionType, cover: Cover, musicType: MusicType) {
     this.projectType = projectType;
     this.title = title;
     this.description = description;
+    this.releaseYear = releaseYear;
     this.credits = credits;
     this.source = source;
     this.commissionType = commissionType;
