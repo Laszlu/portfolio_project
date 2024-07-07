@@ -13,18 +13,21 @@ export interface NavBarTabProps {
   setAppBodyState: React.Dispatch<React.SetStateAction<BodyState>>;
 }
 
-export interface OverviewItemProps {
-  project: Project;
-  anchor: HTMLElement | null;
-  setAnchor: React.Dispatch<React.SetStateAction<HTMLElement | null>>
-  projectForPopup: Project;
-  setProjectForPopup: React.Dispatch<React.SetStateAction<Project>>;
+export interface OverviewProps {
+  selectedProject: Project;
+  setSelectedProject: React.Dispatch<React.SetStateAction<Project>>;
+  setAppBodyState: React.Dispatch<React.SetStateAction<BodyState>>;
 }
 
-export interface OverviewPopupProps {
+export interface OverviewItemProps {
   project: Project;
-  anchor: HTMLElement | null;
-  setAnchor: React.Dispatch<React.SetStateAction<HTMLElement | null>>
+  selectedProject: Project;
+  setSelectedProject: React.Dispatch<React.SetStateAction<Project>>;
+  setAppBodyState: React.Dispatch<React.SetStateAction<BodyState>>;
+}
+
+export interface ProjectPageProps {
+  project: Project;
 }
 
 export interface FooterProps {

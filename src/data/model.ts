@@ -2,7 +2,8 @@ export enum BodyState {
   Overview,
   About,
   Contact,
-  Imprint
+  Imprint,
+  ProjectPage
 }
 
 export enum ProjectType {
@@ -17,11 +18,6 @@ export enum MusicType {
   Single
 }
 
-export enum CommissionType {
-  Personal,
-  Commissioned
-}
-
 export enum ProjectRole {
   Producing,
   Mixing,
@@ -31,13 +27,17 @@ export enum ProjectRole {
   Songwriting
 }
 
-export class ProjectCredit {
-  public artist: string;
-  public projectRole: string;
+export class ProjectVisual {
+  public title: string;
+  public source: string;
+  public altText: string;
 
-  constructor(artist: string, projectRole: string) {
-    this.artist = artist;
-    this.projectRole = projectRole;
+  constructor(title: string,
+              source: string,
+              altText: string) {
+    this.title = title;
+    this.source = source;
+    this.altText = altText;
   }
 }
 
@@ -46,7 +46,9 @@ export class Cover {
   public altText: string;
   public fileType: string;
 
-  constructor(source: string, altText: string, fileType: string) {
+  constructor(source: string,
+              altText: string,
+              fileType: string) {
     this.source = source;
     this.altText = altText;
     this.fileType = fileType;
@@ -56,24 +58,28 @@ export class Cover {
 export class Project {
   public projectType: ProjectType;
   public title: string;
-  public description: string; // TODO: entfernen
   public releaseYear: string;
-  public credits: ProjectCredit[]; // TODO: Artist direkt einbauen, Rollen als ProjectRoles
+  public artist: string;
   public source: string;
-  public commissionType: CommissionType; // TODO: kann weg
   public cover: Cover;
   public musicType: MusicType;
-  //TODO: Visuals als klasse anlegen
+  public visuals: ProjectVisual[];
 
-  constructor(projectType: ProjectType, title: string, description: string, releaseYear: string, credits: ProjectCredit[], source: string, commissionType: CommissionType, cover: Cover, musicType: MusicType) {
+  constructor(projectType: ProjectType,
+              title: string,
+              releaseYear: string,
+              artist: string,
+              source: string,
+              cover: Cover,
+              musicType: MusicType,
+              visuals: ProjectVisual[]) {
     this.projectType = projectType;
     this.title = title;
-    this.description = description;
     this.releaseYear = releaseYear;
-    this.credits = credits;
+    this.artist = artist;
     this.source = source;
-    this.commissionType = commissionType;
     this.cover = cover;
     this.musicType = musicType;
+    this.visuals = visuals;
   }
 }

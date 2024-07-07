@@ -1,12 +1,12 @@
 import { OverviewItemProps } from "../../data/Interfaces.ts"
 import { Card, CardMedia, CardContent, Typography } from "@mui/material"
+import { BodyState } from "../../data/model.ts"
 
 function OverviewItem(props: OverviewItemProps) {
   function handleClick() {
-    console.log("media clicked")
-    const navBar = document.querySelector("#popup-anchor")
-    props.setAnchor(props.anchor ? null : (navBar as HTMLElement));
-    props.setProjectForPopup(props.project);
+    console.log("cover clicked");
+    props.setSelectedProject(props.project);
+    props.setAppBodyState(BodyState.ProjectPage)
   }
 
   return(
@@ -30,7 +30,7 @@ function OverviewItem(props: OverviewItemProps) {
             </Typography>
           </div>
           <Typography variant={"body1"} color={"grey"} className={"overview-item-content-text"}>
-            {props.project.credits[0].artist}
+            {props.project.artist}
           </Typography>
         </CardContent>
       </Card>
