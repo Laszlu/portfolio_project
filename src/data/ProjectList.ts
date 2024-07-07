@@ -20,6 +20,6 @@ export const ProjectList: Project[] = [
       "https://www.youtube.com/embed/videoseries?list=PLBQwcOEynLDjYbF4BI2CaRURLJjda6sSb",
       new Cover("https://raw.githubusercontent.com/Laszlu/portfolio_project/master/src/assets/images/Henry_Rey_EP_Cover.jpg", "Henry Rey EP Cover", "jpg"),
       MusicType.Album,
-      []
+      [new ProjectVisual("Henri Rey EP Cover", "https://raw.githubusercontent.com/Laszlu/portfolio_project/master/src/assets/images/Henry_Rey_EP_Cover.jpg", "Henri Rey EP Cover")]
     ),
 ]
