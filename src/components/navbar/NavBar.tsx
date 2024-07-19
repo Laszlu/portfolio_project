@@ -15,13 +15,13 @@ function NavBar(props: NavBarProps) {
         setAppBodyState={props.setAppBodyState}
       />
       <NavBarTab
-        tabText={"About"}
+        tabText={"about"}
         stateToSet={BodyState.About}
         appBodyState={props.appBodyState}
         setAppBodyState={props.setAppBodyState}
       />
       <NavBarTab
-        tabText={"Contact"}
+        tabText={"contact"}
         stateToSet={BodyState.Contact}
         appBodyState={props.appBodyState}
         setAppBodyState={props.setAppBodyState}

@@ -1,9 +1,12 @@
 import {NavBarTabProps} from "../../data/Interfaces.ts"
+import { Typography } from "@mui/material"
 
 function NavBarTab(props: NavBarTabProps) {
   return(
     <div onClick={() => props.setAppBodyState(props.stateToSet)} className={"navbar-tab"}>
-      {props.tabText}
+      <Typography>
+        {props.tabText}
+      </Typography>
     </div>
   )
 }
