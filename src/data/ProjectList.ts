@@ -2,7 +2,7 @@ import { Cover, MusicType, Project, ProjectType, ProjectVisual } from "./model.t
 
 export const EmptyProject: Project = new Project(
   ProjectType.Music,
-  "none",
+  "None",
   "0000",
   "none",
   "none",
