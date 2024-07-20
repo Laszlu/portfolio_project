@@ -1,7 +1,7 @@
 .navbar-main {
     height: 100px;
     width: 100vw;
-    background-color: black;
+    background-color: var(--main-bg-color);
     display: flex;
 }
 
@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: gray;
+    color: var(--secondary-txt-color);
 }
 
 .navbar-home {
@@ -23,7 +23,7 @@
     justify-content: center;
     cursor: pointer;
     padding-left: 15px;
-    color: white;
+    color: var(--main-txt-color);
 }
 
 @media (min-width:320px) {

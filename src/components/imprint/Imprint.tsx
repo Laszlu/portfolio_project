@@ -5,7 +5,7 @@ function Imprint() {
   return(
     <Box className={"imprint-main"}>
       <Typography variant={"h3"}>
-        Imprint
+        imprint & privacy
       </Typography>
     </Box>
   )

@@ -1,22 +1,26 @@
-<Card>
-        <CardHeader
-          title={props.project.title}
-        />
-        <CardMedia
-          component={"iframe"}
-          height={"150"}
-          src={props.project.source}
-          className={"overview-popup-iframe"}
-          allowFullScreen={true}
-          sandbox={"allow-same-origin"}
-          children={video}
-        />
-        <CardContent>
-          <Typography variant={"h3"}>
+@media (min-width:320px) {
 
-          </Typography>
-        </CardContent>
-      </Card>
+}
+
+@media (min-width:481px) {
+
+}
+
+@media (min-width:641px) {
+
+}
+
+@media (min-width:961px) {
+
+}
+
+@media (min-width:1025px) {
+
+}
+
+@media (min-width:1281px) {
+
+}
 
 
 

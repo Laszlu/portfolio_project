@@ -5,7 +5,7 @@ function About() {
   return(
     <Box className={"about-main"}>
       <Typography variant={"h3"}>
-        About Me
+        about me
       </Typography>
     </Box>
   )

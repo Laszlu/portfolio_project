@@ -1,6 +1,6 @@
 .project-page-main {
     height: calc(100vh - 150px);
-    background-color: black;
+    background-color: var(--main-bg-color);
     width: 100vw;
     overflow: scroll;
     padding: 20px 20px 0 20px;
@@ -9,16 +9,51 @@
 .project-page-embed-container {
     width: 100%;
     height: fit-content;
-    padding: 0 20% 2% 20%;
 }
 
 .project-page-embed-container iframe {
-    width: 80%;
+    width: 100%;
     height: auto;
     aspect-ratio: 16/9;
 }
 
 .project-page-info {
-    color: white;
+    color: var(--main-txt-color);
     text-align: center;
+}
+
+@media (min-width:320px) {
+    .project-page-embed-container {
+        padding: 0 20% 2% 20%;
+    }
+}
+
+@media (min-width:481px) {
+    .project-page-embed-container {
+        padding: 0 0 2% 0;
+    }
+}
+
+@media (min-width:641px) {
+    .project-page-embed-container {
+        padding: 0 5% 2% 5%;
+    }
+}
+
+@media (min-width:961px) {
+    .project-page-embed-container {
+        padding: 0 10% 2% 10%;
+    }
+}
+
+@media (min-width:1025px) {
+    .project-page-embed-container {
+        padding: 0 15% 2% 15%;
+    }
+}
+
+@media (min-width:1281px) {
+    .project-page-embed-container {
+        padding: 0 20% 2% 20%;
+    }
 }

@@ -1,6 +1,6 @@
 .overview-main {
     height: calc(100vh - 150px);
-    background-color: black;
+    background-color: var(--main-bg-color);
     width: 100vw;
     overflow: scroll;
     padding: 20px 20px 0 20px;
@@ -11,7 +11,8 @@
 }
 
 .overview-item-card {
-    background-color: black !important;
+    background-color: var(--main-bg-color) !important;
+    box-shadow: none !important;
 }
 
 .overview-item-img {
@@ -20,19 +21,27 @@
 }
 
 .overview-item-content {
-    background-color: black;
+    background-color: var(--main-bg-color);
     text-align: left;
     padding: 10px 0 0 0 !important;
 }
 
 .overview-item-content-text {
-    color: white;
+    color: var(--main-txt-color);
     line-height: 1.3em !important;
+}
+
+.overview-item-content p:nth-child(2) {
+    color: var(--secondary-txt-color);
 }
 
 .overview-item-content div {
     display: flex;
     justify-content: space-between;
+}
+
+.overview-item-content div p:nth-child(2) {
+    color: var(--secondary-txt-color);
 }
 
 .overview-outer-grid {

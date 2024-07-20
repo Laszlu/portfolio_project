@@ -1,6 +1,6 @@
 .footer-main {
-    background-color: black;
-    color: lightgray;
+    background-color: var(--main-bg-color);
+    color: var(--secondary-txt-color);
     height: 50px;
     display: flex;
     align-items: center;
@@ -8,20 +8,10 @@
 }
 
 .footer-box {
-    width: 50%;
+    width: fit-content;
 }
 
-.footer-box-left {
-    text-align: end;
-    padding-right: 10px;
-}
-
-.footer-box-right {
-    text-align: start;
-    padding-left: 10px;
-}
-
-.footer-box-right a {
+.footer-box a {
     color: inherit;
     text-decoration: underline;
     cursor: pointer;

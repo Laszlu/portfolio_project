@@ -25,11 +25,11 @@ function OverviewItem(props: OverviewItemProps) {
             <Typography variant={"body1"} className={"overview-item-content-text"}>
               {props.project.title}
             </Typography>
-            <Typography variant={"body1"} color={"grey"} className={"overview-item-content-text"}>
+            <Typography variant={"body1"} className={"overview-item-content-text"}>
               {props.project.releaseYear}
             </Typography>
           </div>
-          <Typography variant={"body1"} color={"grey"} className={"overview-item-content-text"}>
+          <Typography variant={"body1"} className={"overview-item-content-text"}>
             {props.project.artist}
           </Typography>
         </CardContent>
