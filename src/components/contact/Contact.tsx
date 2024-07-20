@@ -21,7 +21,7 @@ function Contact() {
       .then(
         (result) => {
           console.log(`Result: ${result.text}`)
-          setStateMessage("message sent!");
+          setStateMessage("Request sent ✓");
           setIsSubmitting(false);
           setTimeout(() => {
             setStateMessage("");
