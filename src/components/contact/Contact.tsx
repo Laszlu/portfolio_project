@@ -13,7 +13,7 @@ function Contact() {
     setIsSubmitting(true);
     emailjs
       .sendForm(
-        "service_portfolio_lny",
+        "serv_leonardvictorluis",
         "request_protfolio",
         "#contact-form",
         {publicKey: "0U7UwoPPlCjv2GSUi"}

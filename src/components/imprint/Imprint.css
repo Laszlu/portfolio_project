@@ -6,3 +6,22 @@
     overflow: scroll;
     padding: 20px 20px 0 20px;
 }
+
+.imprint-main-area {
+    width: 40%;
+    text-align: left;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+.imprint-main-area h5 {
+    margin-bottom: 20px;
+}
+
+.imprint-main-area h6 {
+    margin-bottom: 10px;
+}
+
+.imprint-main-area p {
+    margin-bottom: 40px;
+}
