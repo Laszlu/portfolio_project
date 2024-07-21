@@ -12,7 +12,6 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: var(--secondary-txt-color);
 }
 
 .navbar-home {
@@ -23,7 +22,14 @@
     justify-content: center;
     cursor: pointer;
     padding-left: 15px;
+}
+
+.navbar-txt-selected {
     color: var(--main-txt-color);
+}
+
+.navbar-txt-unselected {
+    color: var(--secondary-txt-color);
 }
 
 @media (min-width:320px) {
