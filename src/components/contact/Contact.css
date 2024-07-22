@@ -7,17 +7,29 @@
     color: var(--main-txt-color);
 }
 
-.contact-main > div {
+.contact-center {
+    height: fit-content;
+    width: 35%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-center > div {
     display: flex;
     justify-content: center;
 }
 
-#contact-form {
-    margin-top: 20px;
+.contact-main > h5 {
+    margin-top: 4vh;
+    color: var(--secondary-txt-color);
 }
 
-#contact-form label {
-    font-size: large;
+#contact-form {
+    margin-top: 20px;
+    width: 100%;
 }
 
 #contact-form div {
@@ -40,6 +52,8 @@
     height: 30px;
     background-color: var(--main-bg-color);
     border: none;
+    font-size: 16px;
+    padding-left: 2%;
 }
 
 #contact-form textarea {
@@ -48,17 +62,20 @@
     border: none;
     height: 100px;
     background-color: var(--main-bg-color);
+    font-size: 16px;
+    padding-left: 2%;
+    line-height: 1.5;
 }
 
 #contact-form input[type=submit] {
     background-color: var(--secondary-txt-color);
     border-radius: 5px;
-    height: 50px;
-    width: 150px;
-    font-size: x-large;
-    color: var(--main-bg-color);
+    height: 35px;
+    width: 130px;
+    font-size: 18px;
     border: none;
     margin-right: 30px;
+    color: var(--main-txt-color);
 }
 
 #contact-form input[type=submit]:hover {
@@ -68,42 +85,36 @@
 
 @media (min-width:320px) {
     #contact-form {
-        width: 100%;
         padding: 5px;
     }
 }
 
 @media (min-width:481px) {
     #contact-form {
-        width: 100%;
         padding: 10px;
     }
 }
 
 @media (min-width:641px) {
     #contact-form {
-        width: 100%;
         padding: 15px;
     }
 }
 
 @media (min-width:961px) {
     #contact-form {
-        width: 80%;
         padding: 20px;
     }
 }
 
 @media (min-width:1025px) {
     #contact-form {
-        width: 60%;
         padding: 25px;
     }
 }
 
 @media (min-width:1281px) {
     #contact-form {
-        width: 40%;
         padding: 30px;
     }
 }
