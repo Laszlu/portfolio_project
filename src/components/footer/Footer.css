@@ -1,6 +1,6 @@
 .footer-main {
-    background-color: var(--main-bg-color);
-    color: var(--secondary-txt-color);
+    background-color: rgba(var(--main-bg-color));
+    color: rgba(var(--secondary-txt-color));
     height: 50px;
     display: flex;
     align-items: center;

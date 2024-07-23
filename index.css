@@ -11,7 +11,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  --main-bg-color: #222222;
-  --main-txt-color: white;
-  --secondary-txt-color: gray;
+  --main-bg-color: 34, 34, 34;
+  --main-txt-color: 255, 255, 255;
+  --secondary-txt-color: 128, 128, 128;
 }

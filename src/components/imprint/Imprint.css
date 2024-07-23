@@ -1,7 +1,7 @@
 .imprint-main {
     height: calc(100vh - 150px);
-    background-color: var(--main-bg-color);
-    color: var(--main-txt-color);
+    background-color: rgba(var(--main-bg-color));
+    color: rgba(var(--main-txt-color));
     width: 100vw;
     overflow: scroll;
     padding: 20px 20px 0 20px;

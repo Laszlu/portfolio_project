@@ -1,6 +1,6 @@
 .overview-main {
     height: calc(100vh - 150px);
-    background-color: var(--main-bg-color);
+    background-color: rgba(var(--main-bg-color));
     width: 100vw;
     overflow: scroll;
     padding: 20px 20px 0 20px;
@@ -11,7 +11,7 @@
 }
 
 .overview-item-card {
-    background-color: var(--main-bg-color) !important;
+    background-color: rgba(var(--main-bg-color)) !important;
     box-shadow: none !important;
 }
 
@@ -21,18 +21,18 @@
 }
 
 .overview-item-content {
-    background-color: var(--main-bg-color);
+    background-color: rgba(var(--main-bg-color));
     text-align: left;
     padding: 10px 0 0 0 !important;
 }
 
 .overview-item-content-text {
-    color: var(--main-txt-color);
+    color: rgba(var(--main-txt-color));
     line-height: 1.3em !important;
 }
 
 .overview-item-content p:nth-child(2) {
-    color: var(--secondary-txt-color);
+    color: rgba(var(--secondary-txt-color));
 }
 
 .overview-item-content div {
@@ -41,7 +41,7 @@
 }
 
 .overview-item-content div p:nth-child(2) {
-    color: var(--secondary-txt-color);
+    color: rgba(var(--secondary-txt-color));
 }
 
 .overview-outer-grid {

@@ -2,6 +2,7 @@ import "./ProjectPage.css"
 import { Box, Typography } from "@mui/material"
 import { ProjectPageProps } from "../../data/Interfaces.ts"
 import { MusicType } from "../../data/model.ts"
+import RoleBadge from "./RoleBadge.tsx"
 
 function SetProjectType(musicType: MusicType) {
   switch (musicType) {
@@ -25,7 +26,7 @@ function ProjectPage(props: ProjectPageProps) {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"/>
       </div>
       <div className={"project-page-info"}>
-        <Typography variant={"h4"} color={"gray"}>
+        <Typography variant={"h4"}>
           {props.project.releaseYear} {SetProjectType(props.project.musicType)}
         </Typography>
         <Typography variant={"h3"}>
@@ -35,6 +36,11 @@ function ProjectPage(props: ProjectPageProps) {
           {props.project.artist}
         </Typography>
       </div>
+      <Box className={"project-page-badge-box"}>
+        {props.project.roles.map((r) => (
+          <RoleBadge role={r}/>
+        ))}
+      </Box>
     </Box>
   )
 }

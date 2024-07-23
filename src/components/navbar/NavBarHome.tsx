@@ -3,7 +3,7 @@ import { Typography } from "@mui/material"
 import { BodyState } from "../../data/model.ts"
 
 function SetTextColor(appBodyState: BodyState) {
-  if(appBodyState === BodyState.Overview) {
+  if(appBodyState === BodyState.Overview || appBodyState == BodyState.ProjectPage) {
     return "navbar-home navbar-txt-selected"
   }
   else {

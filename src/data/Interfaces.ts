@@ -1,4 +1,4 @@
-import { BodyState, Project } from "./model.ts"
+import { BodyState, Project, ProjectRole } from "./model.ts"
 import React from "react"
 
 export interface NavBarProps {
@@ -28,6 +28,10 @@ export interface OverviewItemProps {
 
 export interface ProjectPageProps {
   project: Project;
+}
+
+export interface RoleBadgeProps {
+  role: ProjectRole;
 }
 
 export interface FooterProps {

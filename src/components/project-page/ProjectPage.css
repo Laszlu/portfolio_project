@@ -1,9 +1,11 @@
 .project-page-main {
     height: calc(100vh - 150px);
-    background-color: var(--main-bg-color);
+    background-color: rgba(var(--main-bg-color));
     width: 100vw;
     overflow: scroll;
     padding: 20px 20px 0 20px;
+    justify-items: center;
+    display: grid;
 }
 
 .project-page-embed-container {
@@ -18,8 +20,40 @@
 }
 
 .project-page-info {
-    color: var(--main-txt-color);
     text-align: center;
+}
+
+.project-page-info h4{
+    color: rgba(var(--secondary-txt-color));
+}
+
+.project-page-info h3 {
+    color: rgba(var(--main-txt-color));
+}
+
+.project-page-badge-box {
+    width: 60%;
+    margin-top: 1%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+}
+
+.role-badge {
+    background-color: rgba(var(--secondary-txt-color), 0.4) ;
+    height: 35px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.role-badge p {
+    text-align: center;
+    font-size: 16px;
+    color: rgba(var(--main-txt-color));
 }
 
 @media (min-width:320px) {
