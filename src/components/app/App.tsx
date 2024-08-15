@@ -38,8 +38,6 @@ function App() {
   const [selectedProject, setSelectedProject] = React.useState(EmptyProject);
   const [cookieConsent, setCookieConsent] = React.useState(Cookies.get("cookieConsent"));
 
-  const anchor= document.getElementById("cookie-popup-anchor");
-
   return (
     <>
       <CssBaseline/>

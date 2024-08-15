@@ -9,7 +9,6 @@
 
 .contact-center {
     height: fit-content;
-    width: 35%;
     display: block;
     position: absolute;
     top: 50%;
@@ -93,11 +92,19 @@
     #contact-form {
         padding: 10px;
     }
+
+    .contact-center {
+        width: 75%;
+    }
 }
 
 @media (min-width:641px) {
     #contact-form {
         padding: 15px;
+    }
+
+    .contact-center {
+        width: 65%;
     }
 }
 
@@ -105,16 +112,28 @@
     #contact-form {
         padding: 20px;
     }
+
+    .contact-center {
+        width: 55%;
+    }
 }
 
 @media (min-width:1025px) {
     #contact-form {
         padding: 25px;
     }
+
+    .contact-center {
+        width: 45%;
+    }
 }
 
 @media (min-width:1281px) {
     #contact-form {
         padding: 30px;
+    }
+
+    .contact-center {
+        width: 35%;
     }
 }

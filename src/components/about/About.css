@@ -1,5 +1,4 @@
 .about-main {
-    height: calc(100vh - 150px);
     background-color: rgba(var(--main-bg-color));
     width: 100vw;
     overflow: scroll;
@@ -23,4 +22,34 @@
     margin: 0 5%;
     float: right;
     width: 30%;
+}
+
+@media (min-width:320px) {
+
+}
+
+@media (min-width:481px) {
+
+}
+
+@media (min-width:641px) {
+
+}
+
+@media (min-width:961px) {
+    .about-main {
+        height: calc(100vh - 150px);
+    }
+}
+
+@media (min-width:1025px) {
+    .about-main {
+        height: calc(100vh - 150px);
+    }
+}
+
+@media (min-width:1281px) {
+    .about-main {
+        height: calc(100vh - 150px);
+    }
 }
