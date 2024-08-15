@@ -13,6 +13,7 @@ export enum ProjectType {
 
 export enum MusicType {
   None,
+  ConceptEP,
   EP,
   Album,
   Single

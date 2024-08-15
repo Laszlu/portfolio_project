@@ -10,6 +10,8 @@ function SetProjectType(musicType: MusicType) {
       return "Album";
     case MusicType.EP:
       return "EP";
+    case MusicType.ConceptEP:
+      return "Concept EP"
     case MusicType.Single:
       return "Single";
     case MusicType.None:

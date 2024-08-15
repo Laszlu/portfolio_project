@@ -1,5 +1,5 @@
 .overview-main {
-    height: calc(100vh - 150px);
+    /*height: calc(100vh - 150px);*/
     background-color: rgba(var(--main-bg-color));
     width: 100vw;
     overflow: scroll;

@@ -45,7 +45,10 @@ function Contact() {
     <Box className={"contact-main"}>
       <Box className={"contact-center"}>
         <Typography variant={"h5"}>
-          contact us here or at contact@leonardvictorluis.com
+          contact us here
+        </Typography>
+        <Typography variant={"h6"}>
+          or at contact@leonardvictorluis.com
         </Typography>
         <Box>
           <form id={"contact-form"} onSubmit={sendEmail}>

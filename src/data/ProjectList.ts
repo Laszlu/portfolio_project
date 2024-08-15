@@ -21,6 +21,23 @@ export const EmptyProject: Project = new Project(
 export const ProjectList: Project[] = [
   new Project(
     ProjectType.Music,
+    "Flowers Blooming Close To Dreams Far From Decay",
+    "2024",
+    "Lewis Basil",
+    ["Lofi Pop"],
+    "https://www.youtube.com/embed/videoseries?list=PL4nsCxc8Ld-dRN21oCKh0xvPqugMzjg9_",
+    new Cover("https://i.imgur.com/sVuDvmK.png", "Flowers Blooming Cover"),
+    MusicType.ConceptEP,
+    [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals, ProjectRole.Recording, ProjectRole.Songwriting],
+    [
+      new ProjectVisual(
+        "TITLE",
+        "SOURCE",
+        "ALT")
+    ]
+  ),
+  new Project(
+    ProjectType.Music,
     "QUIT",
     "2023",
     "Kid Os",
@@ -69,6 +86,47 @@ export const ProjectList: Project[] = [
         "SOURCE",
         "ALT")
     ]
+  ),
+  new Project(
+    ProjectType.Music,
+    "Weiterziehen (feat. lny)",
+    "2022",
+    "Saint Miles",
+    ["Hip Hop", "Rap"],
+    "https://www.youtube.com/embed/UqQd0GahtuI",
+    new Cover("https://i.imgur.com/RXswDpr.png", "Weiterziehen Cover"),
+    MusicType.Single,
+    [ProjectRole.Songwriting],
+    [
+      new ProjectVisual(
+        "TITLE",
+        "SOURCE",
+        "ALT")
+    ]
+  ),
+  new Project(
+    ProjectType.Music,
+    "Lately",
+    "2022",
+    "The Juice Band",
+    ["Jazz", "Pop"],
+    "https://www.youtube.com/embed/BbNAHY_OaLI",
+    new Cover("https://i.imgur.com/DmYELJa.png", "Lately Cover"),
+    MusicType.Single,
+    [ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Recording],
+    []
+  ),
+  new Project(
+    ProjectType.Music,
+    "Parching Sand (Remix)",
+    "2022",
+    "Hetaera",
+    ["Synth Wave"],
+    "https://www.youtube.com/embed/DpHZ11FuE0k",
+    new Cover("", "Parching Sand (Remix) Cover"),
+    MusicType.Single,
+    [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals],
+    []
   ),
   new Project(
     ProjectType.Music,
@@ -126,23 +184,6 @@ export const ProjectList: Project[] = [
     new Cover("https://i.imgur.com/veKnaXl.jpg", "Back On This Cover"),
     MusicType.Single,
     [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals, ProjectRole.Recording, ProjectRole.Songwriting],
-    [
-      new ProjectVisual(
-        "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
-  ),
-  new Project(
-    ProjectType.Music,
-    "Weiterziehen (feat. lny)",
-    "2022",
-    "Saint Miles",
-    ["Hip Hop", "Rap"],
-    "https://www.youtube.com/embed/UqQd0GahtuI",
-    new Cover("https://i.imgur.com/RXswDpr.png", "Weiterziehen Cover"),
-    MusicType.Single,
-    [ProjectRole.Songwriting],
     [
       new ProjectVisual(
         "TITLE",
