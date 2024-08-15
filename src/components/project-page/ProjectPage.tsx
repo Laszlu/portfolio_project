@@ -3,6 +3,7 @@ import { Box, Typography } from "@mui/material"
 import { ProjectPageProps } from "../../data/Interfaces.ts"
 import { MusicType } from "../../data/model.ts"
 import RoleBadge from "./RoleBadge.tsx"
+import ProjectVisualElement from "./ProjectVisual.tsx"
 
 function SetProjectType(musicType: MusicType) {
   switch (musicType) {
@@ -41,6 +42,11 @@ function ProjectPage(props: ProjectPageProps) {
       <Box className={"project-page-badge-box"}>
         {props.project.roles.map((r) => (
           <RoleBadge role={r}/>
+        ))}
+      </Box>
+      <Box className={"project-visual-box"}>
+        {props.project.visuals.map((v) => (
+          <ProjectVisualElement visual={v}/>
         ))}
       </Box>
     </Box>

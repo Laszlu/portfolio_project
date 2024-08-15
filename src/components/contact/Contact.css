@@ -86,6 +86,10 @@
     #contact-form {
         padding: 5px;
     }
+
+    .contact-center {
+        width: 85%;
+    }
 }
 
 @media (min-width:481px) {

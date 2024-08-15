@@ -31,14 +31,11 @@ export enum ProjectRole {
 export class ProjectVisual {
   public title: string;
   public source: string;
-  public altText: string;
 
   constructor(title: string,
-              source: string,
-              altText: string) {
+              source: string) {
     this.title = title;
     this.source = source;
-    this.altText = altText;
   }
 }
 

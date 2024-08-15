@@ -46,8 +46,6 @@
 
 .role-badge {
     background-color: rgba(var(--secondary-txt-color), 0.4) ;
-    height: 35px;
-    width: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,6 +57,27 @@
     text-align: center;
     font-size: 1em;
     color: rgba(var(--main-txt-color));
+}
+
+.project-visual-box {
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.project-visual-box-element {
+    width: 40%;
+    height: auto;
+    margin: 5px;
+}
+
+.project-visual-box-element img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: unset;
+
 }
 
 @media (min-width:320px) {
@@ -76,6 +95,12 @@
 
     .project-page-info h4 {
         font-size: 1.1em;
+    }
+
+    .role-badge {
+        height: 30px;
+        width: 100px;
+        font-size: 0.9em;
     }
 }
 

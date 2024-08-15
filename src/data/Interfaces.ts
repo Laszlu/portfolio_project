@@ -1,4 +1,4 @@
-import { BodyState, Project, ProjectRole } from "./model.ts"
+import { BodyState, Project, ProjectRole, ProjectVisual } from "./model.ts"
 import React from "react"
 
 export interface NavBarProps {
@@ -41,4 +41,8 @@ export interface FooterProps {
 export interface CookieBannerProps {
   cookieConsent: string | undefined;
   setCookieConsent: React.Dispatch<React.SetStateAction<string | undefined>>;
+}
+
+export interface ProjectVisualProps {
+  visual: ProjectVisual;
 }

@@ -13,9 +13,7 @@ export const EmptyProject: Project = new Project(
   [
     new ProjectVisual(
       "TITLE",
-      "SOURCE",
-      "ALT")
-  ]
+      "")]
 )
 
 export const ProjectList: Project[] = [
@@ -31,9 +29,15 @@ export const ProjectList: Project[] = [
     [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals, ProjectRole.Recording, ProjectRole.Songwriting],
     [
       new ProjectVisual(
-        "TITLE",
-        "SOURCE",
-        "ALT")
+        "Flowers Blooming Cover Gif",
+        "https://i.imgur.com/t8YdYxu.gif"),
+      new ProjectVisual(
+        "Flowers Blooming Back Gif",
+        "https://i.imgur.com/PVJxpe8.gif"),
+      new ProjectVisual("Flowers Blooming Poster 1 Gif",
+        "https://i.imgur.com/325quZX.gif"),
+      new ProjectVisual("Flowers Blooming Poster 2 Gif",
+        "https://i.imgur.com/SZctjAG.gif")
     ]
   ),
   new Project(
@@ -49,9 +53,7 @@ export const ProjectList: Project[] = [
     [
       new ProjectVisual(
         "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -66,9 +68,7 @@ export const ProjectList: Project[] = [
     [
       new ProjectVisual(
         "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -83,9 +83,7 @@ export const ProjectList: Project[] = [
     [
       new ProjectVisual(
         "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -100,9 +98,7 @@ export const ProjectList: Project[] = [
     [
       new ProjectVisual(
         "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -114,7 +110,10 @@ export const ProjectList: Project[] = [
     new Cover("https://i.imgur.com/DmYELJa.png", "Lately Cover"),
     MusicType.Single,
     [ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Recording],
-    []
+    [
+      new ProjectVisual(
+        "TITLE",
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -126,7 +125,10 @@ export const ProjectList: Project[] = [
     new Cover("", "Parching Sand (Remix) Cover"),
     MusicType.Single,
     [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals],
-    []
+    [
+      new ProjectVisual(
+        "TITLE",
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -140,9 +142,26 @@ export const ProjectList: Project[] = [
     [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals, ProjectRole.Recording, ProjectRole.Songwriting],
     [
       new ProjectVisual(
-        "Henri Rey EP Promo 1",
-        "https://i.imgur.com/2ricpkn.jpg",
-        "Henri Rey EP Promo 1")
+        "Henri Rey EP Gif",
+        "https://i.imgur.com/FyAa4QS.gif"),
+      new ProjectVisual(
+        "Henri Rey Promo 2",
+        "https://i.imgur.com/U2pzcf2.png"),
+      new ProjectVisual(
+        "Henri Rey Promo 1",
+        "https://i.imgur.com/2ricpkn.png"),
+      new ProjectVisual(
+        "Henri Rey Promo 6",
+        "https://i.imgur.com/CdzW4a2.jpg"),
+      new ProjectVisual(
+        "Henri Rey Promo 4",
+        "https://i.imgur.com/Vpx5k4c.jpg"),
+      new ProjectVisual(
+        "Henri Rey Promo 5",
+        "https://i.imgur.com/wRJmlzV.jpg"),
+      new ProjectVisual(
+        "Henri Rey Promo 3",
+        "https://i.imgur.com/UHGdvd1.jpg")
     ]
   ),
   new Project(
@@ -155,7 +174,10 @@ export const ProjectList: Project[] = [
     new Cover("https://i.imgur.com/VgCmHjr.jpg", "Parching Sands Cover"),
     MusicType.Single,
     [ProjectRole.Mixing, ProjectRole.Recording],
-    []
+    [
+      new ProjectVisual(
+        "TITLE",
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -169,10 +191,8 @@ export const ProjectList: Project[] = [
     [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals, ProjectRole.Recording, ProjectRole.Songwriting],
     [
       new ProjectVisual(
-        "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
+        "Bar Gif",
+        "")] //https://i.imgur.com/ZZxQlai.gif
   ),
   new Project(
     ProjectType.Music,
@@ -186,9 +206,11 @@ export const ProjectList: Project[] = [
     [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals, ProjectRole.Recording, ProjectRole.Songwriting],
     [
       new ProjectVisual(
-        "TITLE",
-        "SOURCE",
-        "ALT")
+        "Back On This Promo 1",
+        "https://i.imgur.com/dyMrVra.jpg"),
+      new ProjectVisual(
+        "Back On This Promo 2",
+        "https://i.imgur.com/hF9ed3O.jpg")
     ]
   ),
   new Project(
@@ -204,9 +226,7 @@ export const ProjectList: Project[] = [
     [
       new ProjectVisual(
         "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
+        "")]
   ),
   new Project(
     ProjectType.Music,
@@ -221,8 +241,6 @@ export const ProjectList: Project[] = [
     [
       new ProjectVisual(
         "TITLE",
-        "SOURCE",
-        "ALT")
-    ]
+        "")]
   ),
 ]

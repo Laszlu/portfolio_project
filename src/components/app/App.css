@@ -8,10 +8,55 @@
 }
 
 .cookie-popper {
-  width: 30%;
   height: fit-content;
   padding: 0 20px;
   position: fixed;
-  top: 30px !important;
-  left: 70vw !important;
+}
+
+@media (min-width:320px)  {
+  .cookie-popper {
+    width: 70%;
+    top: 70vh !important;
+    left: 30vw !important;
+  }
+}
+
+@media (min-width:481px)  {
+  .cookie-popper {
+    width: 60%;
+    top: 85vh !important;
+    left: 40vw !important;
+  }
+}
+
+@media (min-width:641px)  {
+  .cookie-popper {
+    width: 40%;
+    top: 85vh !important;
+    left: 60vw !important;
+  }
+}
+
+@media (min-width:961px)  {
+  .cookie-popper {
+    width: 40%;
+    top: 85vh !important;
+    left: 60vw !important;
+  }
+}
+
+@media (min-width:1025px) {
+  .cookie-popper {
+    width: 40%;
+    top: 85vh !important;
+    left: 60vw !important;
+  }
+}
+
+@media (min-width:1281px) {
+  .cookie-popper {
+    width: 30%;
+    top: 85vh !important;
+    left: 70vw !important;
+  }
 }
