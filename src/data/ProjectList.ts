@@ -192,7 +192,7 @@ export const ProjectList: Project[] = [
     [
       new ProjectVisual(
         "Bar Gif",
-        "")] //https://i.imgur.com/ZZxQlai.gif
+        "https://i.imgur.com/frhuEwM.gif")]
   ),
   new Project(
     ProjectType.Music,
