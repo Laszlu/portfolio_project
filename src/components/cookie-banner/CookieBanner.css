@@ -1,0 +1,34 @@
+.cookie-banner-main {
+    width: 100%;
+    background-color: rgba(var(--secondary-txt-color));
+    border-radius: 5px;
+    padding: 1vh;
+    height: fit-content;
+    text-align: justify;
+}
+
+.cookie-banner-main p {
+    margin: 0;
+    text-align: center;
+    color: rgba(var(--main-txt-color));
+}
+
+.cookie-banner-main-buttons {
+    width: 100%;
+    display: flex;
+    margin-top: 1vh;
+    justify-content: center;
+}
+
+.cookie-banner-main-buttons button {
+    width: fit-content;
+    height: fit-content;
+    font-size: 1em;
+    padding: 1% 3%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(var(--main-txt-color));
+    color: rgba(var(--secondary-txt-color));
+    margin: 0 5%;
+    cursor: pointer;
+}

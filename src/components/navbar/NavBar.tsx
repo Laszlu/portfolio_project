@@ -7,7 +7,7 @@ import { BodyState } from "../../data/model.ts"
 
 function NavBar(props: NavBarProps) {
   return (
-    <Box className={"navbar-main"}>
+    <Box className={"navbar-main"} id={"cookie-popup-anchor"}>
       <NavBarHome
         tabText={"leonardvictorluis"}
         stateToSet={BodyState.Overview}

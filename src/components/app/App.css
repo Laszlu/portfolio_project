@@ -7,3 +7,11 @@
   background-color: rgba(var(--main-bg-color));
 }
 
+.cookie-popper {
+  width: 30%;
+  height: fit-content;
+  padding: 0 20px;
+  position: fixed;
+  top: 30px !important;
+  left: 70vw !important;
+}

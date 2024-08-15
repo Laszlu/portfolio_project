@@ -37,3 +37,8 @@ export interface RoleBadgeProps {
 export interface FooterProps {
   setAppBodyState: React.Dispatch<React.SetStateAction<BodyState>>;
 }
+
+export interface CookieBannerProps {
+  cookieConsent: string | undefined;
+  setCookieConsent: React.Dispatch<React.SetStateAction<string | undefined>>;
+}
