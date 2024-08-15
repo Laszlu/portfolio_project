@@ -44,7 +44,7 @@ function Contact() {
   return (
     <Box className={"contact-main"}>
       <Box className={"contact-center"}>
-        <Typography variant={"h5"}>
+        <Typography variant={"h6"}>
           contact us here
         </Typography>
         <Typography variant={"h6"}>

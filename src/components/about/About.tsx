@@ -4,9 +4,6 @@ import { Box, Typography } from "@mui/material"
 function About() {
   return(
     <Box className={"about-main"}>
-      <Typography variant={"h3"}>
-        about me
-      </Typography>
       <Box className={"about-main-area"}>
         <img src={"https://i.imgur.com/aTwZfry.png"} />
         <Typography variant={"body1"}>Hi! I'm Leonard, an audio producer and engineer from Munich,

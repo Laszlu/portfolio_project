@@ -8,7 +8,8 @@
 }
 
 .footer-box {
-    width: fit-content;
+    width: 80%;
+    font-size: 0.8em;
 }
 
 .footer-box a {
