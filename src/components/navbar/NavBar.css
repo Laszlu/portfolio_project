@@ -55,7 +55,7 @@
 
 @media (min-width:320px) {
     .navbar-main p {
-        font-size: 1.5em;
+        font-size: 1.2em;
     }
 
     .navbar-home-margin {
@@ -69,7 +69,7 @@
 
 @media (min-width:481px) {
     .navbar-main p {
-        font-size: 1.6em;
+        font-size: 1.4em;
     }
 
     .navbar-home-margin {
