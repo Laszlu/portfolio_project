@@ -3,12 +3,22 @@ import { Typography } from "@mui/material"
 import { BodyState } from "../../data/model.ts"
 
 function SetTextColor(appBodyState: BodyState) {
+  let classString: string;
   if(appBodyState === BodyState.Overview || appBodyState == BodyState.ProjectPage) {
-    return "navbar-home navbar-txt-selected"
+    classString = "navbar-home navbar-txt-selected";
   }
   else {
-    return "navbar-home navbar-txt-unselected"
+    classString = "navbar-home navbar-txt-unselected";
   }
+
+  if(appBodyState === BodyState.Overview) {
+    classString += " navbar-padding-left"
+  }
+  else {
+    classString += " navbar-home-margin"
+  }
+
+  return classString;
 }
 
 function NavBarHome(props: NavBarTabProps) {

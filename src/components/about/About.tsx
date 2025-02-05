@@ -6,28 +6,28 @@ function About() {
     <Box className={"about-main"}>
       <Box className={"about-main-area"}>
         <img src={"https://i.imgur.com/aTwZfry.png"} />
-        <Typography variant={"body1"}>Hi! I'm Leonard, an audio producer and engineer from Munich,
-          Germany.<br /><br />
+        <Typography variant={"body1"}>hi! i'm leonard, an audio producer and engineer from munich,
+          germany.<br /><br />
 
-          Music in particular has always been playing a significant role of my life. by playing different percussive
+          music in particular has always been playing a significant role of my life. by playing different percussive
           instruments in my childhood i developed a feeling for rhythm and sound at an early stage.<br />
-          At the age of 16 i started making my own music, singing and rapping on instrumentals.<br /><br />
+          at the age of 16 i started making my own music, singing and rapping on instrumentals.<br /><br />
 
-          Just two years later right after finishing school i started my studies in audio engineering at sae institute
+          just two years later right after finishing school i started my studies in audio engineering at sae institute
           munich.<br />
-          After learning a lot about basic to advanced audio principles i continued working in all kinds of
+          after learning a lot about basic to advanced audio principles i continued working in all kinds of
           professional
           studios, recording different musicians or bands and furthermore editing, mixing and mastering their
           products.<br /><br />
 
-          After getting my diploma in audio engineering i wanted to expand my skills even further. with understanding
-          arrangements and learing more about making creative decisions in electronic and acoustic compositions i was
+          after getting my diploma in audio engineering i wanted to expand my skills even further. with understanding
+          arrangements and learning more about making creative decisions in electronic and acoustic compositions i was
           able to graduate with a bachelor's degree in audio production.<br /><br />
 
-          Today, besides putting together my own music under the artist name "lewis basil" i'm still working together
+          today, besides putting together my own music under the artist name "lewis basil" i'm still working together
           with different musicians and artists creating and developing new sounds.<br /><br />
 
-          Feel free to contact me if you are interested in working together on something new.<br /><br />
+          feel free to contact me if you are interested in working together on something new.<br /><br />
 
           el
         </Typography>

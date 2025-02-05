@@ -122,7 +122,7 @@ export const ProjectList: Project[] = [
     "Hetaera",
     ["Synth Wave"],
     "https://www.youtube.com/embed/DpHZ11FuE0k",
-    new Cover("", "Parching Sand (Remix) Cover"),
+    new Cover("https://i.imgur.com/LGpanXl.png", "Parching Sand (Remix) Cover"),
     MusicType.Single,
     [ProjectRole.Producing, ProjectRole.Mixing, ProjectRole.Mastering, ProjectRole.Visuals],
     [

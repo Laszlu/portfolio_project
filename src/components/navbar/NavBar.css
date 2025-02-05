@@ -21,6 +21,27 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+}
+
+.navbar-home-margin {
+    margin-left: 0;
+}
+
+.navbar-back {
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding-left: 15px;
+}
+
+.navbar-back:hover {
+    color: rgba(var(--main-txt-color));
+}
+
+.navbar-padding-left {
     padding-left: 15px;
 }
 
@@ -37,6 +58,10 @@
         font-size: 1.5em;
     }
 
+    .navbar-home-margin {
+        margin-left: 20px;
+    }
+
     .navbar-tab {
         margin-left: 20px;
     }
@@ -45,6 +70,10 @@
 @media (min-width:481px) {
     .navbar-main p {
         font-size: 1.6em;
+    }
+
+    .navbar-home-margin {
+        margin-left: 30px;
     }
 
     .navbar-tab {
@@ -57,6 +86,10 @@
         font-size: 1.7em;
     }
 
+    .navbar-home-margin {
+        margin-left: 40px;
+    }
+
     .navbar-tab {
         margin-left: 40px;
     }
@@ -65,6 +98,10 @@
 @media (min-width:961px) {
     .navbar-main p {
         font-size: 1.9em;
+    }
+
+    .navbar-home-margin {
+        margin-left: 50px;
     }
 
     .navbar-tab {
@@ -77,6 +114,10 @@
         font-size: 2.1em;
     }
 
+    .navbar-home-margin {
+        margin-left: 60px;
+    }
+
     .navbar-tab {
         margin-left: 60px;
     }
@@ -85,6 +126,10 @@
 @media (min-width:1281px) {
     .navbar-main p {
         font-size: 2.3em;
+    }
+
+    .navbar-home-margin {
+        margin-left: 80px;
     }
 
     .navbar-tab {
